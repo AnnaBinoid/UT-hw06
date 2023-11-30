@@ -47,4 +47,5 @@ class ControllerTest {
     void createArray() {
         when(mockController.createArray()).thenReturn(array);
     }
+
 }

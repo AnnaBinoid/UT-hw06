@@ -41,7 +41,15 @@ public class OurListTest {
     }
 
     /**
-     * 2. (unit-тест и mock-тест) на корректность вычисления среднего значения
+     * 2. (mock-тест) на корректность создания нового списка в ModelList
+     */
+    @Test
+    void createMyList(){
+        when(ourMockList.createOurArray()).thenReturn(new int[]{1,2,3,4,5});
+    }
+
+    /**
+     * 3. (unit-тест и mock-тест) на корректность вычисления среднего значения
      */
     @Test
     void averageArray() {
@@ -51,12 +59,12 @@ public class OurListTest {
     }
 
     /**
-     *  2. (unit-тест и mock-тест) на корректность создания списка
+     *  4. (unit-тест и mock-тест) на корректность создания списка
      */
     @Test
     void createOurArray() {
         //проверяем длину
-        assertThat(ourList.createOurArray().length).isEqualTo(5     );
+        assertThat(ourList.createOurArray().length).isEqualTo(5);
         //и mock
         when(ourMockList.createOurArray()).thenReturn(arr3);
     }

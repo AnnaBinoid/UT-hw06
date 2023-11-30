@@ -34,4 +34,5 @@ public class ModelList {
         }
         else System.out.println("The average values of the arrays are equal");
     }
+
 }

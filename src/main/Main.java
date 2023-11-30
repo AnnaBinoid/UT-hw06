@@ -22,5 +22,6 @@ public class Main {
         double averageArray2 = controller.averageArray(array2);
 
         controller.compareArray(averageArray1, averageArray2);
+
     }
 }
